@@ -110,7 +110,7 @@ app.delete("/api/kittens/:id", async (req, res) => {
 });
 
 async function meow(kittenName){
-    await mongoose.connect("mongodb+srv://dabiodun323_db_user:davidisaboy2@pauproj.gu0k15j.mongodb.net/?appName=pauProj");
+    await mongoose.connect("mongodb+srv://davidabiodun_db_user:davidisaboy@godisgood.vn5eegc.mongodb.net/?appName=GodIsGood");
     const kitty1 = new Kitten({ name: kittenName })
     await kitty1.save()
     console.log(kitty1.name)
